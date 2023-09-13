@@ -8,6 +8,7 @@ let divSelJugadores = document.querySelector("#selJugadores");
 let explicacionGanador = document.querySelector("#explicacionGanador");
 let pUserSel = document.querySelector("#userSel");
 let pComputerSel = document.querySelector("#computerSel");
+let btnJugarNuevamente = document.querySelector("#btnJugar");
 function getComputerChoice() {
   let computerNumber = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
   let computerChoice;
@@ -41,7 +42,9 @@ function humanChoice(humanChoice) {
 function playRound(computerChoice, humanChoice) {
   containerBtns.setAttribute("style", "transition: 0.5s; display: none;");
   divSelJugadores.setAttribute("style", "transition: 0.5s; display: flex;");
+  btnJugarNuevamente.setAttribute("style", "display: block;");
   if (computerChoice == humanChoice) {
+    divSelJugadores.setAttribute("style", "transition: 0.5s; display: none;");
     nameGanador.innerText = "Empate, Intentalo de nuevo";
     explicacionGanador.style.display = "none";
     return "draw";
@@ -104,7 +107,13 @@ btnPaper.addEventListener("click", function () {
 btnScissor.addEventListener("click", function () {
   playRound(getComputerChoice(), humanChoice("scissor"));
 });
-
+btnJugarNuevamente.addEventListener("click", function () {
+  containerBtns.setAttribute("style", "display: flex;");
+  divSelJugadores.setAttribute("style", "display: none;");
+  btnJugarNuevamente.setAttribute("style", "display: none;")
+  nameGanador.style.display = 'none'
+  explicacionGanador.style.display = "none";
+});
 // function game() {
 //   let resultadosPartidas = [];
 //   for (let i = 0; i < 3; i++) {
