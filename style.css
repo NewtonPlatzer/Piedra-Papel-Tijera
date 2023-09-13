@@ -41,7 +41,6 @@ header > h1 {
 
 .cardOperation {
 	background-color: transparent;
-	border: none;
 	padding: 30px 60px;
 	border: 1px solid black;
 	border-radius: 8px;
@@ -105,6 +104,22 @@ header > h1 {
 	text-align: center;
 	border-radius: 6px;
 	padding: 4px 6px;
+	margin-bottom: 16px;
+}
+.containerResultados #btnJugar {
+	margin-top: 20px;
+	background-color: transparent;
+	border: 2px solid black;
+	border-radius: 8px;
+	font-size: 1.3rem;
+	padding: 6px 14px;
+	transition: 0.5s;
+	cursor: pointer;
+	display: none;
+}
+.containerResultados #btnJugar:hover {
+	background-color: black;
+	color: white;
 }
 
 footer {
