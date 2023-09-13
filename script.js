@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 let containerBtns = document.querySelector(".containerBtns");
 let btnRock = document.querySelector("#userRock");
 let btnPaper = document.querySelector("#userPaper");
