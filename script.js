@@ -1,4 +1,3 @@
-
 let containerBtns = document.querySelector(".containerBtns");
 let btnRock = document.querySelector("#userRock");
 let btnPaper = document.querySelector("#userPaper");
@@ -151,4 +150,3 @@ btnJugarNuevamente.addEventListener("click", function () {
 //     console.log("Draw!!!");
 //   }
 // }
-
