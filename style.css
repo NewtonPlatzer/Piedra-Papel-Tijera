@@ -115,7 +115,8 @@ header > h1 {
 	padding: 6px 14px;
 	transition: 0.5s;
 	cursor: pointer;
-	display: none;
+	visibility: hidden;
+	
 }
 .containerResultados #btnJugar:hover {
 	background-color: black;
