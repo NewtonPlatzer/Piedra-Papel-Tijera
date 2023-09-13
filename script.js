@@ -40,18 +40,20 @@ function humanChoice(humanChoice) {
   return humanChoice;
 }
 function playRound(computerChoice, humanChoice) {
-  containerBtns.setAttribute("style", "transition: 0.5s; display: none;");
-  divSelJugadores.setAttribute("style", "transition: 0.5s; display: flex;");
-  btnJugarNuevamente.setAttribute("style", "display: block;");
+  containerBtns.style.display = "none";
+  divSelJugadores.style.display = "flex";
+  btnJugarNuevamente.style.display = "block";
   if (computerChoice == humanChoice) {
     divSelJugadores.setAttribute("style", "transition: 0.5s; display: none;");
     nameGanador.innerText = "Empate, Intentalo de nuevo";
+    nameGanador.style.display = "block";
     explicacionGanador.style.display = "none";
     return "draw";
   } else if (computerChoice == 1 && humanChoice == 3) {
     pUserSel.innerText = "Tijera";
     pComputerSel.innerText = "Piedra";
     nameGanador.innerText = "Ganó la máquina";
+    nameGanador.style.display = "block";
     explicacionGanador.innerText = "La piedra destruye las tijeras";
     explicacionGanador.style.display = "block";
     return "computer";
@@ -59,6 +61,7 @@ function playRound(computerChoice, humanChoice) {
     pUserSel.innerText = "Piedra";
     pComputerSel.innerText = "Papel";
     nameGanador.innerText = "Ganó la máquina";
+    nameGanador.style.display = "block";
     explicacionGanador.innerText = "El Papel envuelve a la Piedra";
     explicacionGanador.style.display = "block";
 
@@ -67,6 +70,7 @@ function playRound(computerChoice, humanChoice) {
     pUserSel.innerText = "Papel";
     pComputerSel.innerText = "Tijera";
     nameGanador.innerText = "Ganó la máquina";
+    nameGanador.style.display = "block";
     explicacionGanador.innerText = "Las Tijeras cortan el Papel";
     explicacionGanador.style.display = "block";
 
@@ -75,6 +79,7 @@ function playRound(computerChoice, humanChoice) {
     pUserSel.innerText = "Piedra";
     pComputerSel.innerText = "Tijera";
     nameGanador.innerText = "Ganaste!!!";
+    nameGanador.style.display = "block";
     explicacionGanador.innerText = "La Piedra destruye las Tijeras";
     explicacionGanador.style.display = "block";
 
@@ -83,6 +88,7 @@ function playRound(computerChoice, humanChoice) {
     pUserSel.innerText = "Papel";
     pComputerSel.innerText = "Piedra";
     nameGanador.innerText = "Ganaste!!!";
+    nameGanador.style.display = "block";
     explicacionGanador.innerText = "El Papel envuelve la Piedra";
     explicacionGanador.style.display = "block";
 
@@ -91,6 +97,7 @@ function playRound(computerChoice, humanChoice) {
     pUserSel.innerText = "Tijera";
     pComputerSel.innerText = "Papel";
     nameGanador.innerText = "Ganaste!!!";
+    nameGanador.style.display = "block";
     explicacionGanador.innerText = "Las Tijeras cortan el Papel";
     explicacionGanador.style.display = "block";
 
@@ -108,11 +115,16 @@ btnScissor.addEventListener("click", function () {
   playRound(getComputerChoice(), humanChoice("scissor"));
 });
 btnJugarNuevamente.addEventListener("click", function () {
-  containerBtns.setAttribute("style", "display: flex;");
-  divSelJugadores.setAttribute("style", "display: none;");
-  btnJugarNuevamente.setAttribute("style", "display: none;")
-  nameGanador.style.display = 'none'
-  explicacionGanador.style.display = "none";
+  containerBtns.style.display = "flex";
+  let itemsOcultar = [
+    divSelJugadores,
+    btnJugarNuevamente,
+    nameGanador,
+    explicacionGanador,
+  ];
+  for (let i = 0; i < itemsOcultar.length; i++) {
+    itemsOcultar[i].style.display = "none";
+  }
 });
 // function game() {
 //   let resultadosPartidas = [];
