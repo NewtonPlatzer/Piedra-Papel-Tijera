@@ -116,12 +116,8 @@ btnScissor.addEventListener("click", function () {
 });
 btnJugarNuevamente.addEventListener("click", function () {
   containerBtns.style.display = "flex";
-  btnJugarNuevamente.style.visibility = 'visible';
-  let itemsOcultar = [
-    divSelJugadores,
-    nameGanador,
-    explicacionGanador,
-  ];
+  btnJugarNuevamente.style.visibility = "hidden";
+  let itemsOcultar = [divSelJugadores, nameGanador, explicacionGanador];
   for (let i = 0; i < itemsOcultar.length; i++) {
     itemsOcultar[i].style.display = "none";
   }

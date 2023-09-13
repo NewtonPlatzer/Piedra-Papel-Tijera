@@ -1,142 +1,141 @@
 :root {
-	--main-color: #000000;
+  --main-color: #000000;
 }
 * {
-	margin: 0;
-	padding: 0;
-	font-size: 16px;
-	font-family: sans-serif, "arial";
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: sans-serif, "arial";
 }
 
 header {
-	background-color: var(--main-color);
-	color: white;
-	display: flex;
-	justify-content: center;
-	padding: 30px 0;
-	margin-bottom: 50px;
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  margin-bottom: 50px;
 }
 header > h1 {
-	font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 40px;
-	padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 40px;
 }
 .container h2 {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 .containerBtns {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 50px;
-	gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 30px;
 }
 
 .cardOperation {
-	background-color: transparent;
-	padding: 30px 60px;
-	border: 1px solid black;
-	border-radius: 8px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 14px;
-	font-size: 1.5rem;
-	cursor: pointer;
-	transition: 0.5s;
+  background-color: transparent;
+  padding: 30px 60px;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .cardOperation:hover {
-	transform: scale(1.1);
-	background-color: black;
-	color: white;
+  transform: scale(1.1);
+  background-color: black;
+  color: white;
 }
 .cardOperation i {
-	font-size: 80px;
+  font-size: 80px;
 }
 
 #selJugadores {
-	display: flex;
-	gap: 30px;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	display: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: none;
 }
 #selJugadores h3 {
-	font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 #selJugadores .cardOperation:hover {
-	transform: scale(1);
-	background-color: transparent;
-	color: black;
-	cursor: inherit;
+  transform: scale(1);
+  background-color: transparent;
+  color: black;
+  cursor: inherit;
 }
 #selJugadores .pOperacionElegida {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 #selJugadores .pOperacionElegida i {
-	display: block;
-	margin-bottom: 14px;
+  display: block;
+  margin-bottom: 14px;
 }
 .containerResultados {
-	border: 1px solid lightgray;
-	border-radius: 6px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 10px;
-	padding: 30px 50px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 50px;
 }
 .containerResultados p {
-	font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 .containerResultados p:first-of-type {
-	background-color: black;
-	color: white;
-	width: 100%;
-	text-align: center;
-	border-radius: 6px;
-	padding: 4px 6px;
-	margin-bottom: 16px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px 6px;
+  margin-bottom: 16px;
 }
 .containerResultados #btnJugar {
-	margin-top: 20px;
-	background-color: transparent;
-	border: 2px solid black;
-	border-radius: 8px;
-	font-size: 1.3rem;
-	padding: 6px 14px;
-	transition: 0.5s;
-	cursor: pointer;
-	visibility: hidden;
-	
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  padding: 6px 14px;
+  transition: 0.5s;
+  cursor: pointer;
+  visibility: hidden;
 }
 .containerResultados #btnJugar:hover {
-	background-color: black;
-	color: white;
+  background-color: black;
+  color: white;
 }
 
 footer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 30px;
-	background-color: var(--main-color);
-	color: white;
-	padding: 30px 20px;
-	border-radius: 12px;
-	margin: auto 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin: auto 8%;
 }
 footer h3 {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 footer p {
-	margin-bottom: 8px;
+  margin-bottom: 8px;
 }
