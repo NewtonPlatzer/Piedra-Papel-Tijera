@@ -98,3 +98,27 @@ btnPaper.addEventListener("click", function () {
 btnScissor.addEventListener("click", function () {
   playRound(getComputerChoice(), humanChoice("scissor"));
 });
+// function game() {
+//   let resultadosPartidas = [];
+//   for (let i = 0; i < 3; i++) {
+//     let resultado = playRound(getComputerChoice(), humanChoice());
+//     resultadosPartidas.push(resultado);
+//   }
+//   let resultadoComputerArray = [];
+//   let resultadoHumanArray = [];
+
+//   for (let i = 0; i < resultadosPartidas.length; i++) {
+//     if (resultadosPartidas[i] == "computer") {
+//       resultadoComputerArray.push(1);
+//     } else if (resultadosPartidas[i] == "human") {
+//       resultadoHumanArray.push(1);
+//     }
+//   }
+//   if (resultadoComputerArray.length < resultadoHumanArray.length) {
+//     console.log("Human win!!!");
+//   } else if (resultadoComputerArray.length > resultadoHumanArray.length) {
+//     console.log("Computer win!!!");
+//   } else {
+//     console.log("Draw!!!");
+//   }
+// }
