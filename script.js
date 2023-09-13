@@ -42,7 +42,7 @@ function humanChoice(humanChoice) {
 function playRound(computerChoice, humanChoice) {
   containerBtns.style.display = "none";
   divSelJugadores.style.display = "flex";
-  btnJugarNuevamente.style.visibility = "visible";
+  btnJugarNuevamente.style.display = "block";
   if (computerChoice == humanChoice) {
     divSelJugadores.setAttribute("style", "transition: 0.5s; display: none;");
     nameGanador.innerText = "Empate, Intentalo de nuevo";
@@ -116,7 +116,7 @@ btnScissor.addEventListener("click", function () {
 });
 btnJugarNuevamente.addEventListener("click", function () {
   containerBtns.style.display = "flex";
-  btnJugarNuevamente.style.visibility = "hidden";
+  btnJugarNuevamente.style.display = "block";
   let itemsOcultar = [divSelJugadores, nameGanador, explicacionGanador];
   for (let i = 0; i < itemsOcultar.length; i++) {
     itemsOcultar[i].style.display = "none";

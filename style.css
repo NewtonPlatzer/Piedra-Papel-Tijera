@@ -107,6 +107,7 @@ header > h1 {
   margin-bottom: 16px;
 }
 .containerResultados #btnJugar {
+	display: none;
   margin-top: 20px;
   background-color: transparent;
   border: 2px solid black;
@@ -115,7 +116,6 @@ header > h1 {
   padding: 6px 14px;
   transition: 0.5s;
   cursor: pointer;
-  visibility: hidden;
 }
 .containerResultados #btnJugar:hover {
   background-color: black;
